@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&family=Poppins:wght@300;400;500&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    padding: 0 50px;
+}
+
+@keyframes fadeLeft {
+    0%{
+        opacity: 0;
+        transform: translateY(-5rem);
+    }
+}
+
+body{
+  margin: 50px 0;
+}
+
+#firstBody {   
+  background: url(img3.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-size: cover;
+}
+
+#firstBody, #secondBody{
+    position: relative;
+    text-align: center;
+    margin: 150px 10px 0 20px;
+}
+
+.body #firstBody #title{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+.body #firstBody #title #title-cont{
+    flex: 1 1 40rem;
+    animation: fadeLeft 0.4s linear 0.4s backwards;
+}
+
+.body #firstBody #title #title-cont h1{
+    margin: 5rem 0;
+}
+
+.welcomeP {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.second{
+    background-color: #f3f4f6;
+}
+
+#secondBody{
+    display: inline-block;
+    background-color: #f3f4f6;
+}
+
+#secondBody h2,
+#secondBody p {
+    text-align: center;
+    font-family: 'Noto Serif', serif;
+}
+
+.intro {
+    width: 30%;
+    height: 30%;
+    float: left;
+    padding-right: 50px;
+}
+
+.mission {
+    position: relative;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Noto Serif', serif;
+
+}
+
+ #community {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+#communityP {
+    text-align: justify;
+    float: right;
+    display: inline;
+    font-family: 'Noto Serif', serif;
+}
+
+.communityImg {
+    width: 40%;
+    float: right;
+    padding-left: 50px;
+}
+
+#chooseUs {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+#chooseUs #chooseUs-cont .chooseUsP{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-family: 'Noto Serif', serif;
+}
+
+#chooseUs #chooseUs-cont .tableChoose table{
+    border-style: none;
+}
+
+
+#chooseUs #chooseUs-cont .tableChoose table td{
+    /* display: flex; */
+    position: relative;
+    text-align: justify;
+    margin-right: 20px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 5px;
+}

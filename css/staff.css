@@ -1,0 +1,417 @@
+
+:root {
+    --main-color: #444344;
+/*    --background: #010103;*/
+    --border: .1rem solid rgba(255, 255, 255, .3);
+    --white-color: #f5f5f5;
+/*   --black-color: #222;*/
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--main-color);
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+.clearfix{
+    clear: both;
+}
+
+.logo{
+    margin: 0px;
+    margin-left: 28px;
+    font-weight: bold;
+    color: var(--white-color);
+    margin-bottom: 30px;
+    font-size: 35px;
+}
+
+.logo span{
+    color: #C0CE01;
+/*    color: #d3cebd;*/
+
+}
+
+.sidenav{
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #363334 ;
+    overflow: hidden;
+    transition: 0.5%;
+    padding-top: 30px;
+}
+
+.sidenav a{
+    padding: 15px 8px 15px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--white-color);
+    display: block;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+.sidenav a:hover{
+    color: #f1f1f1;
+    background-color: #0c0c0d;
+}
+
+#main{
+    transition: margin-left .5s;
+    padding: 16px;
+    margin-left: 300px;
+    overflow-y: auto; /* Enable vertical scrolling */
+    height: 100vh; /* Set the height to fill the viewport */
+}
+
+.header{
+    padding: 22px;
+    margin-top: 15px;
+
+}
+
+.col-div-6{
+    width: 50%;
+    float: left;
+}
+
+
+
+.profile{
+    display: inline-block;
+    float: right;
+    width: 160px;
+
+}
+
+/*.col-div-6 i .fa-user{
+    float: left;
+    width: 40px;
+    margin-top: 9px;
+}
+*/
+
+
+
+.col-div-6 .profile .fa-user{
+    font-size: 25px;
+    float: left;
+    width: 40px;
+    margin-top: 5px;
+    color: #C0CE01;
+}
+
+.profile p{
+    color: var(--white-color);
+    font-weight: 500;
+    margin-left: 55px;
+    margin-top: 10px;
+  }
+
+.nav2{
+    display: none;
+    text-transform: uppercase;
+}
+
+/*------------------- welcome -----------------------*/
+.welcome {
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    margin-bottom: 50px;
+}
+
+/* Center the content within the container */
+.welcome img {
+    max-width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+/* Style the heading text */
+.welcome h1 {
+    font-size: 30px;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/*----------------------- box --------------------------*/
+/* Basic styling for the link container */
+.link {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 100px;
+}
+
+/* Style the individual boxes */
+.box {
+    flex: 0 1 calc(33.33% - 20px);
+    text-align: center;
+    color: #fff;
+    background-color: #555;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+    /*max-width: 800px;
+    margin: 0 auto;*/
+}
+
+/* Style the heading inside the box */
+.box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #C0CE01;
+    text-transform: uppercase;
+}
+
+/* Style the paragraph inside the box */
+.box p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Style the icon inside the box */
+.box i {
+    font-size: 24px;
+}
+
+/* Hover effect for the boxes */
+.box:hover {
+    background-color: #777;
+    transform: scale(1.10);
+}
+
+/* Style the link in its normal state */
+.box a,
+.box a:link {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Style the link on hover */
+.box a:hover {
+    text-decoration: none;
+    color: #C0CE01;
+}
+
+/*------------------------------- member report ----------------------------*/
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid var(--white-color);
+    padding: 12px;
+    text-align: left;
+    color: #000;
+}
+
+th {
+    background-color: var(--main-color);
+    text-transform: uppercase;
+    color: var(--white-color);
+    background-color: #333;
+}
+
+table td a {
+    display: inline-block;
+    padding: 6px 10px;
+    margin-right: 5px;
+    text-decoration: none;
+    background-color: var(--main-color);
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+table td a:hover {
+    background-color: #C0CE01;
+    color: #000;
+}
+
+
+/*---------------- edit member ------------------------*/
+/* Styles for the Edit Member form */
+.content {
+    padding: 20px;
+}
+
+.content h2 {
+    color: #C0CE01;
+    text-transform: uppercase;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--white-color);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: var(--border);
+    border-radius: 4px;
+    background-color: var(--main-color);
+    color: var(--white-color);
+}
+
+button {
+    background-color: #C0CE01;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+
+
+/* Add this to your existing CSS or create a new CSS file */
+
+/* Dropdown container */
+.logout-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown button */
+.logout-dropdown .dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 8px 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown content (hidden by default) */
+.logout-dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.logout-dropdown .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color on hover */
+.logout-dropdown .dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown on hover */
+.logout-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.modal-dialog {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.modal-content {
+    background-color: #f5f5f5;
+    border: var(--border);
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.modal-header h4 {
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-size: 25px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: var(--border);
+    border-radius: 4px;
+    background-color: var(--main-color);
+    color: var(--white-color);
+
+}
+
+button {
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+
+footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0px;
+            width: 100%;
+           
+        }
+
+        footer p {
+            margin: 0;
+        }

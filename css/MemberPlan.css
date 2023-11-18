@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@900&family=Poppins:wght@300&display=swap');
+
+:root{
+    --grey: #2f2f2f;
+    --neon: #39FF14;
+    --title-color-black: hsl(180, 4%, 12%);
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+    --text-color: hsl(180, 4%, 72%);
+    --title-color: hsl(180, 4%, 98%) ;
+    --first-color: hsl(79, 72%, 55%);
+    --first-color-light: hsl(79, 97%, 77%);
+    --big-font-size: 1.25rem;
+}
+
+html{
+    margin: 0 50px;
+}
+
+body:not(header){
+    background-image: url('https://i.pinimg.com/564x/10/a1/54/10a154401f3ea056c4e88600857a1a57.jpg');
+}
+
+.button{
+    font-family: sans-serif;
+    font-size: 0.938rem;
+    display: inline-block;
+    padding: 10px 32px;
+    border: 2px solid var(--first-color-light);
+    color: var(--title-color-black);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: var(--neon);
+}
+
+.button i{
+    font-size: 1.25rem;
+    transition: transform .3s;
+}
+
+.button-flex{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: .5rem;
+}
+
+.button-flex:hover i{
+    transform: translateX(.25rem);
+}
+
+.header h1{
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-align: center;
+    line-height: 100%;
+}
+
+.header h2{
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(185, 206, 152);
+    text-align: center;
+    line-height: 100%;
+}
+
+h1,h2,h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--title-color);
+    font-weight: 700;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+form{
+    background: url("img/img6.jpg") no-repeat;
+    background-size: cover;
+    margin: 20px 0;
+    padding-bottom: 50px;
+}
+
+/* REUSABLE CSS CLASSES */
+#container{
+    max-width: 1124px;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    margin: 50px 0;
+}
+
+#section{
+    margin: 50px 0;
+    padding: 4.5rem 0 2rem;
+}
+
+.h2{
+    margin-top: 5rem;
+}
+
+p,
+h2{
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: black;
+}
+
+
+#container{
+    display: flex;
+    flex-direction: column;
+    row-gap: .75rem;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+
+.grid{
+    display: grid;
+    gap: 5.5rem;
+}
+
+.MP-title-border,
+.MP-title{
+    font-size: 3.75rem;
+    letter-spacing: 1.5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-align: center;
+    line-height: 100%;
+}
+
+.MP-title span{
+    color: greenyellow;
+}
+
+.pricing-container{
+    grid-template-columns: 285px;
+    justify-content: center;
+    row-gap: 2rem;
+    display: flex;
+    margin: 0 auto;
+}
+
+.pricing-card,
+.pricing-shape,
+.pricing-list{
+    display: grid;
+}
+
+.pricing-card{
+    row-gap: 2rem;
+    background-color: #f3f4f6;
+    padding: 2rem 2.5rem;
+    margin: 0 auto;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.05);
+    transition: 0.2s ease;
+}
+
+.pricing-card:hover{
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.1);
+}
+
+.pricing-img{
+    width: 35px;
+}
+
+.pricing-shape{
+    width: 60px;
+    height: 60px;
+    background-color: var(--grey);
+    border-radius: 50%;
+    place-items: center;
+    margin-bottom: 1rem;
+}
+
+.pricing-title{
+    font-size: var(--h3-font-size);
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.pricing-number{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: var(--h1-font-size);
+    color: #535353;
+}
+
+.pricing-list{
+    font-family: Arial, Helvetica, sans-serif;
+    row-gap: 1rem;
+}
+
+.pricing-item{
+    display: flex;
+    column-gap: 0.5rem;
+    align-items: center;
+    font-size: var(--small-font-size);
+}
+
+.pricing-item i{
+    font-size: 22px;
+    color: var(--first-color);
+}
+
+.pricing-item-opacity{
+    opacity: .3;
+}
+
+.pricing-button{
+    background-color: var(--title-color);
+    padding: 20px 40px;
+}
+
+.pricing-button:hover,
+.pricing-button i:hover{
+    background-color: greenyellow;
+    cursor: pointer;
+}
+
+.pricing-card-active{
+    background-color: yellowgreen;
+    border: 2px solid var(--first-color-light);
+}
+
+.pricing-card-active .pricing-shape{
+    background-color: var(--first-color-light);
+}
+
+.pricing-card-active .pricing-item i{
+    color: var(--title-color);
+}
+
+.pricing-card-active .pricing-title,
+.pricing-card-active .pricing-number,
+.pricing-card-active .pricing-item{
+    color: var(--title-color-black);
+}
+
+
+ .button input[type="radio"]{
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+    position: absolute;
+    opacity: 0; 
+    cursor: pointer;
+}
+
+#circleIcon {
+    /* Default color (e.g., grey) */
+    color: grey;
+}
+
+#purchaseLabel.active #circleIcon {
+    /* Color when the label is clicked (e.g., black) */
+    color: black;
+}
+
+form .action input{
+    background: white;
+    color: black;
+    border-radius: 4px;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 13px;
+    height: 44px;
+    letter-spacing: 3px;
+    padding: 0 20px;
+    float: right;
+}
+
+.action input:hover{
+    color: green;
+}
